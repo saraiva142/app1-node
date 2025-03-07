@@ -1,5 +1,12 @@
 console.log("Aula 01 - Tipo de Dados em JS");
 
+//Rodar o docker :
+//>docker run -it -d --name lts-node -v "C:/Users/Elisio da Silva/Desktop/Coisas do João/Construção de Software/app1-node:/app1-node" node:alpine
+//>docker exec -it lts-node sh
+//>cd app1-node
+//>cd aula01
+//>node tipo_de_dados.js
+
 // Tipos de Dados em JS
 // 1. Number 
 console.log("Numero: ", 1);
