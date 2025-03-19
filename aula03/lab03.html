@@ -6,43 +6,151 @@
     <title>Aula Formulario</title>
 </head>
 <body>
-    <h2>Formulário Irado</h2>
+    <h2>Formulário Irado 🚀</h2>
     <p>
         <li><a href="../aula01/aula01.html" style="color: inherit; text-decoration: none;">Home 🏠</a></li>
     </p>
     <hr>
 
     <form action="" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu email">
-        <br>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-        <br>
-        <label for="idade">Idade:</label>
-        <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
-        <br>
-        <label for="sexo">Sexo:</label>
-        <input type="radio" name="sexo" id="sexo" value="M">Masculino
-        <input type="radio" name="sexo" id="sexo" value="F">Feminino
-        <br>
-        <label for="cidade">Cidade:</label>
-        <select name="cidade" id="cidade">
-            <option value="1">São Paulo</option>
-            <option value="2">Rio de Janeiro</option>
-            <option value="3">Belo Horizonte</option>
-            <option value="4">Curitiba</option>
-        </select>
-        <br>
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-        <br>
+        <p>            
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </p>
+        
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+        </p>
+        
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </p>
+        
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+        </p>
+        
+        <p>
+            <label for="sexo">Sexo:</label><br>
+            <input type="radio" name="sexo" id="sexo" value="M">Masculino
+            <input type="radio" name="sexo" id="sexo" value="F">Feminino
+            <br>
+        </p>
+
+        <p>
+            <label for="interesses">Interesses:</label><br>
+            <input type="checkbox" name="interesses[]" id="interesses" value="sk8">Skate 🛹
+            <br>
+            <input type="checkbox" name="interesses[]" id="interesses" value="surf">surf 🏄‍♂️
+            <br>
+            <input type="checkbox" name="interesses[]" id="interesses" value="tecnologia">tecnologia 💻
+            <br>
+            <input type="checkbox" name="interesses[]" id="interesses" value="culinaria">culinaria 🍜
+            <br>
+            <input type="checkbox" name="interesses[]" id="interesses" value="cinema">cinema🎬
+            <br>
+        </p>
+        
+        <p>
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade" required>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="3">Belo Horizonte</option>
+                <option value="4">Curitiba</option>
+                <option value="5">Goiânia</option>
+            </select>
+            <br>
+        </p>
+        
+        <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br>
+        </p>
+        
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
 
 </body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #79d5ff;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    li {
+        list-style: none;
+        text-align: center;
+    }
+
+    hr {
+        color: #0000;
+    }
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form p {
+        margin: 10px 0;
+    }
+
+    form label {
+        display: block;
+        font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="number"],
+    form select,
+    form textarea {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form input[type="radio"] {
+        margin-right: 10px;
+    }
+    
+    form input[type="checkbox"] {   
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    form input[type="submit"]:hover,
+    form input[type="reset"]:hover {
+        background-color: #555;
+    }
+</style>
 </html>
